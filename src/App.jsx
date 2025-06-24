@@ -19,8 +19,8 @@ function App() {
     const img = new Image();
     img.src = URL.createObjectURL(file);
     img.onload = async () => {
-      const maxCols = 150;
-      const maxRows = 150;
+      const maxCols = 175;
+      const maxRows = 175;
 
       let canvasWidth = img.width;
       let canvasHeight = img.height;
@@ -213,6 +213,30 @@ function App() {
             • Cell values show brightness levels from 0 (dark) to 255 (bright)<br />
             • Large images are automatically resized to 150×150 for performance<br />
             • Download starts automatically when conversion is complete
+          </div>
+
+          <div className="attribution">
+            <div className="attribution-title">
+              Inspired by:
+            </div>
+            <div className="attribution-links">
+              <a
+                href="https://think-maths.co.uk/spreadsheet/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="attribution-link"
+              >
+                Think Maths Spreadsheet
+              </a>
+              <a
+                href="https://www.youtube.com/watch?v=UBX2QQHlQ_I"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="attribution-link"
+              >
+                YouTube Video
+              </a>
+            </div>
           </div>
         </div>
       </div>
